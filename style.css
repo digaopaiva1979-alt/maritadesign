@@ -5,28 +5,31 @@
 }
 
 :root {
-    /* Paleta de Cores para Studio de Unhas - Minimalista & Elegante */
-    --primary: #3a2c2f;
-    --primary-dark: #2a1f21;
-    --primary-light: #5a4448;
-    --accent: #e3b8b5;
-    --accent-dark: #d4a09c;
-    --accent-light: #f5e4e2;
-    --background: #fefcfb;
-    --surface: #ffffff;
-    --surface-glass: rgba(255, 255, 255, 0.9);
-    --text-primary: #2c2c2c;
-    --text-secondary: #7a7a7a;
-    --text-muted: #b0b0b0;
-    --border: #f0e6e4;
-    --border-light: #f5efed;
-    --success: #9bb8b0;
-    --shadow-sm: 0 2px 12px rgba(0,0,0,0.03);
-    --shadow-md: 0 8px 28px rgba(0,0,0,0.05);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.06);
-    --shadow-hover: 0 25px 45px rgba(0,0,0,0.08);
-    --transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-    --glow: 0 0 0 1px rgba(227, 184, 181, 0.2), 0 8px 20px rgba(0,0,0,0.03);
+    /* Paleta de Cores para Studio de Unhas - Elegante & Sofisticado */
+    --primary: #4A3B3C;
+    --primary-dark: #2E2425;
+    --primary-light: #6B5556;
+    --accent: #D4B5B2;
+    --accent-dark: #C4A09C;
+    --accent-light: #F2E6E4;
+    --accent-soft: #F9F0EE;
+    --background: #FCF9F8;
+    --surface: #FFFFFF;
+    --surface-glass: rgba(255, 255, 255, 0.96);
+    --text-primary: #2C2425;
+    --text-secondary: #7A6B6C;
+    --text-muted: #B8ACAD;
+    --border: #F0E8E6;
+    --border-dark: #E5D9D7;
+    --success: #A8C4BA;
+    --gold: #D4C5B2;
+    --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.02);
+    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 24px 56px rgba(0, 0, 0, 0.08);
+    --shadow-glow: 0 0 0 1px rgba(212, 181, 178, 0.15), 0 8px 24px rgba(0, 0, 0, 0.04);
+    --transition: all 0.4s cubic-bezier(0.2, 0.95, 0.4, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
 body {
@@ -43,14 +46,14 @@ body {
     padding: 0 32px;
 }
 
-/* Typography */
+/* Typography Refinada */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     letter-spacing: -0.02em;
 }
 
-/* Header Moderno - Glassmorphism */
+/* Header - Glassmorphism Elegante */
 header {
     background: var(--surface-glass);
     backdrop-filter: blur(12px);
@@ -134,10 +137,10 @@ nav {
     color: var(--primary);
 }
 
-/* Hero Section - Centralizada e Minimalista */
+/* Hero Section - Centralizada com Toque Acolhedor */
 .hero {
-    background: linear-gradient(135deg, #fff9f8 0%, #fefaf9 50%, #fffbfa 100%);
-    padding: 100px 0;
+    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--background) 60%, #FFFDFC 100%);
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,12 +153,18 @@ nav {
 .hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(227, 184, 181, 0.08) 0%, transparent 70%);
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 181, 178, 0.03) 0%, transparent 70%);
     pointer-events: none;
+    animation: slowRotate 40s linear infinite;
+}
+
+@keyframes slowRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .hero-content {
@@ -166,11 +175,12 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     margin-bottom: 24px;
-    line-height: 1.2;
+    line-height: 1.15;
     color: var(--primary);
     font-weight: 500;
+    letter-spacing: -0.02em;
 }
 
 .highlight {
@@ -182,22 +192,23 @@ nav {
 .highlight::after {
     content: '';
     position: absolute;
-    bottom: 8px;
+    bottom: 10px;
     left: 0;
     width: 100%;
-    height: 35%;
-    background: rgba(227, 184, 181, 0.25);
+    height: 30%;
+    background: rgba(212, 181, 178, 0.25);
     z-index: -1;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .hero-content p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: 36px;
+    margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.7;
 }
 
 .hero-buttons {
@@ -207,15 +218,35 @@ nav {
 }
 
 .btn {
-    padding: 14px 36px;
+    padding: 14px 38px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
     display: inline-block;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
 }
 
 .btn-primary {
@@ -244,18 +275,25 @@ nav {
     transform: translateY(-3px);
 }
 
-.hero-image {
-    display: none;
-}
-
-/* Section Titles */
+/* Section Titles com Decoração */
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-bottom: 56px;
     color: var(--primary);
     font-weight: 500;
     position: relative;
+}
+
+.section-title::before {
+    content: '✦';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent);
+    font-size: 1.2rem;
+    opacity: 0.6;
 }
 
 .section-title::after {
@@ -264,13 +302,13 @@ nav {
     bottom: -16px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
+    width: 50px;
+    height: 2px;
     background: var(--accent);
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
-/* Diferenciais Cards - Efeito Glass */
+/* Diferenciais Cards - Com Efeito Elegante */
 .diferenciais {
     padding: 100px 0;
     background: var(--surface);
@@ -285,9 +323,9 @@ nav {
 .diferencial-card {
     text-align: center;
     padding: 48px 32px;
-    background: var(--surface);
-    border-radius: 24px;
-    transition: var(--transition);
+    background: var(--background);
+    border-radius: 28px;
+    transition: var(--transition-bounce);
     cursor: pointer;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
@@ -301,8 +339,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
     transform: scaleX(0);
     transition: var(--transition);
 }
@@ -312,39 +350,41 @@ nav {
 }
 
 .diferencial-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-light);
 }
 
 .diferencial-card i {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: var(--accent);
     margin-bottom: 24px;
     transition: var(--transition);
+    display: inline-block;
 }
 
 .diferencial-card:hover i {
-    transform: scale(1.05);
+    transform: scale(1.1) rotate(5deg);
     color: var(--accent-dark);
 }
 
 .diferencial-card h3 {
     margin-bottom: 16px;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--primary);
 }
 
 .diferencial-card p {
     color: var(--text-secondary);
     font-size: 0.9rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Serviços Cards - Efeito Elegante */
+/* Serviços Cards - Premium */
 .servicos-destaque {
     padding: 100px 0;
-    background: var(--background);
+    background: var(--accent-soft);
+    position: relative;
 }
 
 .servicos-grid {
@@ -356,9 +396,9 @@ nav {
 
 .servico-card {
     background: var(--surface);
-    border-radius: 24px;
+    border-radius: 28px;
     overflow: hidden;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
     cursor: pointer;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
@@ -372,7 +412,7 @@ nav {
     left: 0;
     right: 0;
     height: 0;
-    background: linear-gradient(to top, rgba(227, 184, 181, 0.05), transparent);
+    background: linear-gradient(to top, rgba(212, 181, 178, 0.08), transparent);
     transition: var(--transition);
 }
 
@@ -381,20 +421,20 @@ nav {
 }
 
 .servico-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--accent-light);
+    border-color: var(--accent);
 }
 
 .servico-card img {
     width: 100%;
-    height: 240px;
+    height: 260px;
     object-fit: cover;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
 }
 
 .servico-card:hover img {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .servico-info {
@@ -406,7 +446,7 @@ nav {
 
 .servico-info h3 {
     margin-bottom: 12px;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     color: var(--primary);
 }
 
@@ -414,10 +454,11 @@ nav {
     color: var(--text-secondary);
     margin-bottom: 16px;
     font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .preco {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--accent-dark);
     font-family: 'Playfair Display', serif;
@@ -431,10 +472,10 @@ nav {
     text-align: center;
 }
 
-/* Footer Elegante */
+/* Footer - Sofisticado */
 footer {
     background: var(--primary);
-    color: #e0e0e0;
+    color: #E8E0DE;
     padding: 64px 0 32px;
     position: relative;
 }
@@ -443,10 +484,10 @@ footer::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 10%;
+    right: 10%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
 }
 
 .footer-content {
@@ -459,41 +500,42 @@ footer::before {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 24px;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: white;
     letter-spacing: -0.3px;
+    font-weight: 500;
 }
 
 .footer-section p {
     margin-bottom: 12px;
-    color: #c0c0c0;
+    color: #C8BEBC;
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .social-links {
     display: flex;
-    gap: 20px;
+    gap: 16px;
     margin-top: 24px;
 }
 
 .social-links a {
-    color: #c0c0c0;
+    color: #C8BEBC;
     font-size: 1.2rem;
     transition: var(--transition);
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .social-links a:hover {
     color: var(--accent);
-    transform: translateY(-3px);
-    background: rgba(255,255,255,0.1);
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-section ul {
@@ -505,7 +547,7 @@ footer::before {
 }
 
 .footer-section ul li a {
-    color: #c0c0c0;
+    color: #C8BEBC;
     text-decoration: none;
     transition: var(--transition);
     font-size: 0.85rem;
@@ -519,8 +561,8 @@ footer::before {
 .footer-bottom {
     text-align: center;
     padding-top: 32px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #999;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #A89895;
     font-size: 0.8rem;
 }
 
@@ -528,33 +570,41 @@ footer::before {
     color: var(--accent);
 }
 
-/* WhatsApp Float */
+/* WhatsApp Float - Com Brilho */
 .whatsapp-float {
     position: fixed;
     bottom: 32px;
     right: 32px;
-    background: #25d366;
+    background: linear-gradient(135deg, #25d366, #20b859);
     color: white;
-    width: 58px;
-    height: 58px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8rem;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
-    transition: var(--transition);
+    font-size: 1.9rem;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35);
+    transition: var(--transition-bounce);
     z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35); }
+    50% { box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5); }
+    100% { box-shadow: 0 6px 24px rgba(37, 211, 102, 0.35); }
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1) rotate(2deg);
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+    transform: scale(1.12) rotate(4deg);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45);
+    animation: none;
 }
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, #fefaf9 0%, #fdf6f4 100%);
+    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--background) 100%);
     padding: 80px 0 64px;
     text-align: center;
     position: relative;
@@ -591,9 +641,9 @@ footer::before {
 
 .sobre-imagem img {
     width: 100%;
-    border-radius: 28px;
+    border-radius: 32px;
     box-shadow: var(--shadow-lg);
-    transition: var(--transition);
+    transition: var(--transition-bounce);
 }
 
 .sobre-imagem img:hover {
@@ -607,7 +657,7 @@ footer::before {
 
 .profile-card {
     background: var(--surface);
-    border-radius: 32px;
+    border-radius: 36px;
     padding: 48px;
     display: flex;
     gap: 48px;
@@ -620,15 +670,16 @@ footer::before {
 .profile-card:hover {
     box-shadow: var(--shadow-hover);
     border-color: var(--accent-light);
+    transform: translateY(-4px);
 }
 
 .profile-image img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent);
-    box-shadow: var(--shadow-sm);
+    border: 4px solid var(--accent);
+    box-shadow: var(--shadow-md);
     transition: var(--transition);
 }
 
@@ -638,7 +689,7 @@ footer::before {
 }
 
 .profile-info h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-bottom: 8px;
     color: var(--primary);
 }
@@ -648,7 +699,8 @@ footer::before {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
 }
 
 .profile-info p {
@@ -669,7 +721,7 @@ footer::before {
 
 .profile-social a:hover {
     color: var(--accent-dark);
-    transform: translateX(4px);
+    transform: translateX(5px);
 }
 
 .profile-social a i {
@@ -683,16 +735,16 @@ footer::before {
 
 .valores-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
 }
 
 .valor-item {
     text-align: center;
-    padding: 40px 32px;
+    padding: 44px 32px;
     background: var(--background);
-    border-radius: 24px;
-    transition: var(--transition);
+    border-radius: 28px;
+    transition: var(--transition-bounce);
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
@@ -705,7 +757,7 @@ footer::before {
     left: 0;
     right: 0;
     height: 0;
-    background: linear-gradient(to top, rgba(227, 184, 181, 0.05), transparent);
+    background: linear-gradient(to top, rgba(212, 181, 178, 0.06), transparent);
     transition: var(--transition);
 }
 
@@ -714,7 +766,7 @@ footer::before {
 }
 
 .valor-item:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-md);
     border-color: var(--accent-light);
 }
@@ -727,7 +779,7 @@ footer::before {
 }
 
 .valor-item:hover i {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .valor-item h3 {
@@ -756,7 +808,7 @@ footer::before {
 .tab-btn {
     padding: 12px 32px;
     background: transparent;
-    border: 1.5px solid var(--border);
+    border: 1.5px solid var(--border-dark);
     border-radius: 50px;
     cursor: pointer;
     font-size: 0.9rem;
@@ -778,13 +830,13 @@ footer::before {
 
 .tab-content.active {
     display: block;
-    animation: fadeIn 0.5s ease;
+    animation: fadeInUp 0.6s ease;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -793,7 +845,7 @@ footer::before {
 }
 
 .servicos-lista {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -801,16 +853,16 @@ footer::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 24px 20px;
     border-bottom: 1px solid var(--border);
     transition: var(--transition);
     background: var(--surface);
-    margin-bottom: 4px;
-    border-radius: 16px;
+    margin-bottom: 6px;
+    border-radius: 20px;
 }
 
 .servico-item:hover {
-    background: var(--background);
+    background: var(--accent-soft);
     padding-left: 32px;
     padding-right: 32px;
     box-shadow: var(--shadow-sm);
@@ -829,28 +881,28 @@ footer::before {
 }
 
 .servico-preco .preco {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--accent);
 }
 
 .pacotes {
     padding: 100px 0;
-    background: var(--background);
+    background: var(--accent-soft);
 }
 
 .pacotes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 32px;
 }
 
 .pacote-card {
     background: var(--surface);
-    border-radius: 28px;
+    border-radius: 32px;
     padding: 48px 32px;
     text-align: center;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
@@ -863,7 +915,7 @@ footer::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
     transform: scaleX(0);
     transition: var(--transition);
 }
@@ -873,19 +925,19 @@ footer::before {
 }
 
 .pacote-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     box-shadow: var(--shadow-hover);
     border-color: var(--accent);
 }
 
 .pacote-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 24px;
     color: var(--primary);
 }
 
 .pacote-preco {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     color: var(--accent);
     margin-bottom: 32px;
@@ -928,10 +980,10 @@ footer::before {
 
 .info-card {
     background: var(--surface);
-    padding: 32px;
-    border-radius: 24px;
+    padding: 36px 28px;
+    border-radius: 28px;
     text-align: center;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
     border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
@@ -954,39 +1006,39 @@ footer::before {
 }
 
 .info-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-md);
     border-color: var(--accent-light);
 }
 
 .info-card i {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--accent);
     margin-bottom: 20px;
     transition: var(--transition);
 }
 
 .info-card:hover i {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .info-card h3 {
     margin-bottom: 16px;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: var(--primary);
 }
 
 .info-card p {
     color: var(--text-secondary);
     font-size: 0.85rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .social-media {
     grid-column: span 2;
     background: var(--surface);
-    padding: 40px;
-    border-radius: 24px;
+    padding: 44px;
+    border-radius: 28px;
     text-align: center;
     border: 1px solid var(--border);
     transition: var(--transition);
@@ -1000,12 +1052,13 @@ footer::before {
 .social-media h3 {
     margin-bottom: 28px;
     color: var(--primary);
+    font-size: 1.4rem;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 28px;
     flex-wrap: wrap;
 }
 
@@ -1013,16 +1066,16 @@ footer::before {
     color: var(--text-secondary);
     text-decoration: none;
     transition: var(--transition);
-    font-size: 0.9rem;
-    padding: 8px 16px;
-    border-radius: 40px;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border-radius: 50px;
     background: var(--background);
 }
 
 .social-icons a:hover {
     color: var(--accent);
-    transform: translateY(-2px);
-    background: var(--accent-light);
+    transform: translateY(-3px);
+    background: var(--accent-soft);
 }
 
 .social-icons a i {
@@ -1035,7 +1088,7 @@ footer::before {
 }
 
 .map-container {
-    border-radius: 28px;
+    border-radius: 32px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
@@ -1064,17 +1117,17 @@ footer::before {
 
 .acessos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 32px;
     margin-top: 48px;
 }
 
 .acesso-item {
     background: var(--background);
-    padding: 36px 28px;
-    border-radius: 24px;
+    padding: 38px 28px;
+    border-radius: 28px;
     text-align: center;
-    transition: var(--transition);
+    transition: var(--transition-bounce);
     border: 1px solid var(--border);
 }
 
@@ -1085,19 +1138,19 @@ footer::before {
 }
 
 .acesso-item i {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: var(--accent);
     margin-bottom: 20px;
     transition: var(--transition);
 }
 
 .acesso-item:hover i {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .acesso-item h3 {
     margin-bottom: 16px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     color: var(--primary);
 }
 
@@ -1141,11 +1194,11 @@ footer::before {
     }
     
     .hero {
-        padding: 60px 0;
+        padding: 80px 0;
     }
     
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
     
     .hero-content p {
@@ -1159,7 +1212,7 @@ footer::before {
     }
     
     .btn {
-        width: 200px;
+        width: 220px;
     }
     
     .sobre-grid {
@@ -1170,7 +1223,7 @@ footer::before {
     .profile-card {
         flex-direction: column;
         text-align: center;
-        padding: 32px;
+        padding: 36px;
     }
     
     .contato-info {
@@ -1197,7 +1250,7 @@ footer::before {
     }
     
     .tab-btn {
-        width: 200px;
+        width: 220px;
     }
 }
 
@@ -1207,7 +1260,7 @@ footer::before {
     }
     
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .diferenciais-grid,
@@ -1232,20 +1285,20 @@ footer::before {
     }
     
     .whatsapp-float {
-        width: 52px;
-        height: 52px;
-        font-size: 1.6rem;
+        width: 54px;
+        height: 54px;
+        font-size: 1.7rem;
         bottom: 20px;
         right: 20px;
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     
     .profile-image img {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
     }
     
     .pacote-card {
@@ -1256,5 +1309,9 @@ footer::before {
         flex-direction: column;
         align-items: center;
         gap: 12px;
+    }
+    
+    .social-icons a {
+        width: 200px;
     }
 }
