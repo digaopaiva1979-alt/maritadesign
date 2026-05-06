@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços e Preços | Studio Nail Art</title>
+    <title>Serviços e Preços | Studio Nail Art - Inocoop Guarulhos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,6 +23,7 @@
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="servicos.html" class="active">Serviços</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <li><a href="termos.html">Políticas</a></li>
                 </ul>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -39,13 +40,27 @@
             </div>
         </section>
 
+        <!-- Aviso Importante -->
+        <section class="aviso-atendimento">
+            <div class="container">
+                <div class="aviso-card">
+                    <i class="fas fa-truck-moving"></i>
+                    <div class="aviso-content">
+                        <h3>Atendimento Domiciliar</h3>
+                        <p>Realizamos atendimento nos bairros: <strong>Inocoop I, Inocoop II, Presidente Dutra e Pimentas</strong> (consulte disponibilidade)</p>
+                        <p><strong>Taxa de Serviço Externo:</strong> R$12,60 + valor das passagens de transporte público</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="servicos-completos">
             <div class="container">
                 <div class="tabs">
                     <button class="tab-btn active" data-tab="manicure">Manicure & Pedicure</button>
                     <button class="tab-btn" data-tab="alongamento">Alongamento</button>
                     <button class="tab-btn" data-tab="nailart">Nail Art</button>
-                    <button class="tab-btn" data-tab="tratamentos">Tratamentos</button>
+                    <button class="tab-btn" data-tab="produtos">Produtos Personalizados</button>
                 </div>
 
                 <div id="manicure" class="tab-content active">
@@ -54,6 +69,7 @@
                             <div class="servico-detalhes">
                                 <h3>Esmaltação Comum (Mãos)</h3>
                                 <p>Esmaltação tradicional com esmalte de alta duração</p>
+                                <small>As unhas devem estar livres de esmaltação anterior</small>
                             </div>
                             <div class="servico-preco">
                                 <span class="preco">R$ 35,00</span>
@@ -88,11 +104,12 @@
                         </div>
                         <div class="servico-item">
                             <div class="servico-detalhes">
-                                <h3>Spa dos Pés</h3>
-                                <p>Hidratação profunda, esfoliação e massagem relaxante</p>
+                                <h3>Remoção de Alongamento Anterior</h3>
+                                <p>Remoção de material aplicado por outros profissionais</p>
+                                <small>Comunicar no ato do agendamento</small>
                             </div>
                             <div class="servico-preco">
-                                <span class="preco">R$ 70,00</span>
+                                <span class="preco">Sob consulta</span>
                             </div>
                         </div>
                     </div>
@@ -171,33 +188,25 @@
                     </div>
                 </div>
 
-                <div id="tratamentos" class="tab-content">
+                <div id="produtos" class="tab-content">
                     <div class="servicos-lista">
                         <div class="servico-item">
                             <div class="servico-detalhes">
-                                <h3>Reconstrução de Unhas</h3>
-                                <p>Tratamento para unhas danificadas</p>
+                                <h3>Conjunto de Unhas Personalizadas</h3>
+                                <p>Unhas feitas à mão sob medida</p>
+                                <small>Prazo de produção: 15 dias úteis</small>
                             </div>
                             <div class="servico-preco">
-                                <span class="preco">R$ 50,00</span>
+                                <span class="preco">Sob consulta</span>
                             </div>
                         </div>
                         <div class="servico-item">
                             <div class="servico-detalhes">
-                                <h3>Hidratação Profunda</h3>
-                                <p>Tratamento intensivo para unhas e cutículas</p>
+                                <h3>Guia de Aplicação</h3>
+                                <p>Enviado junto com cada pedido</p>
                             </div>
                             <div class="servico-preco">
-                                <span class="preco">R$ 45,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Remoção de Cutículas</h3>
-                                <p>Procedimento completo e delicado</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 30,00</span>
+                                <span class="preco">Incluso</span>
                             </div>
                         </div>
                     </div>
@@ -205,40 +214,29 @@
             </div>
         </section>
 
-        <section class="pacotes">
+        <section class="informacoes-atendimento">
             <div class="container">
-                <h2 class="section-title">Pacotes <span class="highlight">Especiais</span></h2>
-                <div class="pacotes-grid">
-                    <div class="pacote-card">
-                        <h3>Pacote Mensal</h3>
-                        <div class="pacote-preco">R$ 150,00</div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> 1 Manicure completa por semana</li>
-                            <li><i class="fas fa-check"></i> 1 Pedicure completa por mês</li>
-                            <li><i class="fas fa-check"></i> Hidratação especial</li>
-                        </ul>
-                        <a href="contato.html" class="btn btn-primary">Assinar</a>
+                <h2 class="section-title">Informações <span class="highlight">Importantes</span></h2>
+                <div class="info-grid">
+                    <div class="info-box">
+                        <i class="fas fa-clock"></i>
+                        <h3>Pontualidade</h3>
+                        <p><strong>Profissional:</strong> Tolerância de até 15 minutos</p>
+                        <p><strong>Cliente:</strong> Tolerância de 10 minutos</p>
+                        <small>Após esse prazo, o serviço poderá ser cancelado ou remanejado</small>
                     </div>
-                    <div class="pacote-card">
-                        <h3>Pacote Noiva</h3>
-                        <div class="pacote-preco">R$ 250,00</div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Manicure + Pedicure</li>
-                            <li><i class="fas fa-check"></i> Spa completo (mãos e pés)</li>
-                            <li><i class="fas fa-check"></i> Nail Art personalizada</li>
-                            <li><i class="fas fa-check"></i> Esmaltação em gel (duração até 15 dias)</li>
-                        </ul>
-                        <a href="contato.html" class="btn btn-primary">Agendar</a>
+                    <div class="info-box">
+                        <i class="fas fa-chair"></i>
+                        <h3>Estrutura Necessária</h3>
+                        <p>✓ Mesa e duas cadeiras</p>
+                        <p>✓ Local bem iluminado</p>
+                        <p>✓ Acesso próximo à tomada</p>
                     </div>
-                    <div class="pacote-card">
-                        <h3>Pacote Anual</h3>
-                        <div class="pacote-preco">R$ 1.500,00</div>
-                        <ul>
-                            <li><i class="fas fa-check"></i> 12 meses de cuidados</li>
-                            <li><i class="fas fa-check"></i> 1 procedimento por mês à sua escolha</li>
-                            <li><i class="fas fa-check"></i> 10% off em produtos</li>
-                        </ul>
-                        <a href="contato.html" class="btn btn-primary">Assinar</a>
+                    <div class="info-box">
+                        <i class="fas fa-calendar-times"></i>
+                        <h3>Cancelamentos</h3>
+                        <p><strong>Até 24h de antecedência:</strong> Sem custo</p>
+                        <p><strong>Após 24h ou ausência:</strong> 50% do valor do serviço</p>
                     </div>
                 </div>
             </div>
@@ -246,7 +244,6 @@
     </main>
 
     <footer>
-        <!-- Mesmo footer -->
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -266,6 +263,7 @@
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="servicos.html">Serviços</a></li>
                         <li><a href="contato.html">Contato</a></li>
+                        <li><a href="termos.html">Políticas</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -279,6 +277,7 @@
                     <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
                     <p><i class="fab fa-whatsapp"></i> (11) 98888-8888</p>
                     <p><i class="far fa-envelope"></i> contato@studionailart.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Inocoop - Guarulhos, SP</p>
                 </div>
             </div>
             <div class="footer-bottom">
