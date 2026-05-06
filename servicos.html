@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços e Preços | Studio Nail Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Studio Nail Art Logo" onerror="this.src='https://via.placeholder.com/150x60?text=Studio+Nail+Art'">
+                        <span>Studio Nail Art</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html" class="active">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nossos Serviços</h1>
+                <p>Conheça todos os serviços disponíveis e seus preços</p>
+            </div>
+        </section>
+
+        <section class="servicos-completos">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="manicure">Manicure & Pedicure</button>
+                    <button class="tab-btn" data-tab="alongamento">Alongamento</button>
+                    <button class="tab-btn" data-tab="nailart">Nail Art</button>
+                    <button class="tab-btn" data-tab="tratamentos">Tratamentos</button>
+                </div>
+
+                <div id="manicure" class="tab-content active">
+                    <div class="servicos-lista">
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Esmaltação Comum (Mãos)</h3>
+                                <p>Esmaltação tradicional com esmalte de alta duração</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 35,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Esmaltação Comum (Pés)</h3>
+                                <p>Esmaltação completa com hidratação e esfoliação</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 45,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Manicure + Pedicure</h3>
+                                <p>Pacote completo para mãos e pés</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 70,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Spa das Mãos</h3>
+                                <p>Hidratação profunda, esfoliação e massagem</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 60,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Spa dos Pés</h3>
+                                <p>Hidratação profunda, esfoliação e massagem relaxante</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 70,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="alongamento" class="tab-content">
+                    <div class="servicos-lista">
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Gel na Fibra (Moldes)</h3>
+                                <p>Alongamento com gel e fibra de vidro</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 120,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Acrigel</h3>
+                                <p>Técnica mista - alongamento e fortalecimento</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 130,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Blindagem</h3>
+                                <p>Proteção e brilho por até 30 dias</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 80,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Manutenção (Gel/Acrigel)</h3>
+                                <p>Manutenção do alongamento a cada 15 dias</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 70,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="nailart" class="tab-content">
+                    <div class="servicos-lista">
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Nail Art Básica</h3>
+                                <p>Detalhes simples: bolinhas, francesinha, poá, etc.</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">+ R$ 20,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Nail Art Avançada</h3>
+                                <p>Desenhos complexos, degradê, carimbos, etc.</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">+ R$ 40,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Nail Art 3D</h3>
+                                <p>Apliques, pedrarias, pérolas e texturas</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">+ R$ 60,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tratamentos" class="tab-content">
+                    <div class="servicos-lista">
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Reconstrução de Unhas</h3>
+                                <p>Tratamento para unhas danificadas</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 50,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Hidratação Profunda</h3>
+                                <p>Tratamento intensivo para unhas e cutículas</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 45,00</span>
+                            </div>
+                        </div>
+                        <div class="servico-item">
+                            <div class="servico-detalhes">
+                                <h3>Remoção de Cutículas</h3>
+                                <p>Procedimento completo e delicado</p>
+                            </div>
+                            <div class="servico-preco">
+                                <span class="preco">R$ 30,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pacotes">
+            <div class="container">
+                <h2 class="section-title">Pacotes <span class="highlight">Especiais</span></h2>
+                <div class="pacotes-grid">
+                    <div class="pacote-card">
+                        <h3>Pacote Mensal</h3>
+                        <div class="pacote-preco">R$ 150,00</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 Manicure completa por semana</li>
+                            <li><i class="fas fa-check"></i> 1 Pedicure completa por mês</li>
+                            <li><i class="fas fa-check"></i> Hidratação especial</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-primary">Assinar</a>
+                    </div>
+                    <div class="pacote-card">
+                        <h3>Pacote Noiva</h3>
+                        <div class="pacote-preco">R$ 250,00</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Manicure + Pedicure</li>
+                            <li><i class="fas fa-check"></i> Spa completo (mãos e pés)</li>
+                            <li><i class="fas fa-check"></i> Nail Art personalizada</li>
+                            <li><i class="fas fa-check"></i> Esmaltação em gel (duração até 15 dias)</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-primary">Agendar</a>
+                    </div>
+                    <div class="pacote-card">
+                        <h3>Pacote Anual</h3>
+                        <div class="pacote-preco">R$ 1.500,00</div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 12 meses de cuidados</li>
+                            <li><i class="fas fa-check"></i> 1 procedimento por mês à sua escolha</li>
+                            <li><i class="fas fa-check"></i> 10% off em produtos</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-primary">Assinar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Mesmo footer -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Studio Nail Art</h3>
+                    <p>Especialistas em beleza e cuidado das mãos, trazendo arte e sofisticação para suas unhas.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p><i class="far fa-clock"></i> Seg - Sex: 09h - 19h</p>
+                    <p><i class="far fa-clock"></i> Sábado: 09h - 16h</p>
+                    <p><i class="far fa-calendar-alt"></i> Domingo: Fechado</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fab fa-whatsapp"></i> (11) 98888-8888</p>
+                    <p><i class="far fa-envelope"></i> contato@studionailart.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Studio Nail Art - Todos os direitos reservados | Desenvolvido com <i class="fas fa-heart"></i> para você</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
