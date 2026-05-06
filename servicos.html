@@ -1,295 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços e Preços | Studio Nail Art - Inocoop Guarulhos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços | Studio Nail Art</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Studio Nail Art Logo" onerror="this.src='https://via.placeholder.com/150x60?text=Studio+Nail+Art'">
-                        <span>Studio Nail Art</span>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="servicos.html" class="active">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="termos.html">Políticas</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Nossos Serviços</h1>
-                <p>Conheça todos os serviços disponíveis e seus preços</p>
-            </div>
-        </section>
+<header>
+<div class="container">
+<nav>
+<div class="logo">
+<a href="index.html">Studio Nail Art</a>
+</div>
 
-        <!-- Aviso Importante -->
-        <section class="aviso-atendimento">
-            <div class="container">
-                <div class="aviso-card">
-                    <i class="fas fa-truck-moving"></i>
-                    <div class="aviso-content">
-                        <h3>Atendimento Domiciliar</h3>
-                        <p>Realizamos atendimento nos bairros: <strong>Inocoop I, Inocoop II, Presidente Dutra e Pimentas</strong> (consulte disponibilidade)</p>
-                        <p><strong>Taxa de Serviço Externo:</strong> R$12,60 + valor das passagens de transporte público</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-        <section class="servicos-completos">
-            <div class="container">
-                <div class="tabs">
-                    <button class="tab-btn active" data-tab="manicure">Manicure & Pedicure</button>
-                    <button class="tab-btn" data-tab="alongamento">Alongamento</button>
-                    <button class="tab-btn" data-tab="nailart">Nail Art</button>
-                    <button class="tab-btn" data-tab="produtos">Produtos Personalizados</button>
-                </div>
+<main>
 
-                <div id="manicure" class="tab-content active">
-                    <div class="servicos-lista">
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Esmaltação Comum (Mãos)</h3>
-                                <p>Esmaltação tradicional com esmalte de alta duração</p>
-                                <small>As unhas devem estar livres de esmaltação anterior</small>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 35,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Esmaltação Comum (Pés)</h3>
-                                <p>Esmaltação completa com hidratação e esfoliação</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 45,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Manicure + Pedicure</h3>
-                                <p>Pacote completo para mãos e pés</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 70,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Spa das Mãos</h3>
-                                <p>Hidratação profunda, esfoliação e massagem</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 60,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Remoção de Alongamento Anterior</h3>
-                                <p>Remoção de material aplicado por outros profissionais</p>
-                                <small>Comunicar no ato do agendamento</small>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">Sob consulta</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="page-header">
+<h1>Nossos Serviços</h1>
+<p>Experiências exclusivas para suas unhas</p>
+</section>
 
-                <div id="alongamento" class="tab-content">
-                    <div class="servicos-lista">
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Gel na Fibra (Moldes)</h3>
-                                <p>Alongamento com gel e fibra de vidro</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 120,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Acrigel</h3>
-                                <p>Técnica mista - alongamento e fortalecimento</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 130,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Blindagem</h3>
-                                <p>Proteção e brilho por até 30 dias</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 80,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Manutenção (Gel/Acrigel)</h3>
-                                <p>Manutenção do alongamento a cada 15 dias</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">R$ 70,00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="servicos">
 
-                <div id="nailart" class="tab-content">
-                    <div class="servicos-lista">
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Nail Art Básica</h3>
-                                <p>Detalhes simples: bolinhas, francesinha, poá, etc.</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">+ R$ 20,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Nail Art Avançada</h3>
-                                <p>Desenhos complexos, degradê, carimbos, etc.</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">+ R$ 40,00</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Nail Art 3D</h3>
-                                <p>Apliques, pedrarias, pérolas e texturas</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">+ R$ 60,00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="servico">
+<h3>Soft Gel</h3>
+<p>Alongamento leve, flexível e confortável.</p>
+<span>R$ 80,00</span>
+</div>
 
-                <div id="produtos" class="tab-content">
-                    <div class="servicos-lista">
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Conjunto de Unhas Personalizadas</h3>
-                                <p>Unhas feitas à mão sob medida</p>
-                                <small>Prazo de produção: 15 dias úteis</small>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">Sob consulta</span>
-                            </div>
-                        </div>
-                        <div class="servico-item">
-                            <div class="servico-detalhes">
-                                <h3>Guia de Aplicação</h3>
-                                <p>Enviado junto com cada pedido</p>
-                            </div>
-                            <div class="servico-preco">
-                                <span class="preco">Incluso</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="servico">
+<h3>Molde F1</h3>
+<p>Estrutura resistente com acabamento impecável.</p>
+<span>R$ 90,00</span>
+</div>
 
-        <section class="informacoes-atendimento">
-            <div class="container">
-                <h2 class="section-title">Informações <span class="highlight">Importantes</span></h2>
-                <div class="info-grid">
-                    <div class="info-box">
-                        <i class="fas fa-clock"></i>
-                        <h3>Pontualidade</h3>
-                        <p><strong>Profissional:</strong> Tolerância de até 15 minutos</p>
-                        <p><strong>Cliente:</strong> Tolerância de 10 minutos</p>
-                        <small>Após esse prazo, o serviço poderá ser cancelado ou remanejado</small>
-                    </div>
-                    <div class="info-box">
-                        <i class="fas fa-chair"></i>
-                        <h3>Estrutura Necessária</h3>
-                        <p>✓ Mesa e duas cadeiras</p>
-                        <p>✓ Local bem iluminado</p>
-                        <p>✓ Acesso próximo à tomada</p>
-                    </div>
-                    <div class="info-box">
-                        <i class="fas fa-calendar-times"></i>
-                        <h3>Cancelamentos</h3>
-                        <p><strong>Até 24h de antecedência:</strong> Sem custo</p>
-                        <p><strong>Após 24h ou ausência:</strong> 50% do valor do serviço</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+<div class="servico">
+<h3>Banho de Gel / Blindagem</h3>
+<p>Fortalecimento e brilho duradouro.</p>
+<span>R$ 60,00</span>
+</div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Studio Nail Art</h3>
-                    <p>Especialistas em beleza e cuidado das mãos, trazendo arte e sofisticação para suas unhas.</p>
-                    <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="termos.html">Políticas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Horário de Funcionamento</h4>
-                    <p><i class="far fa-clock"></i> Seg - Sex: 09h - 19h</p>
-                    <p><i class="far fa-clock"></i> Sábado: 09h - 16h</p>
-                    <p><i class="far fa-calendar-alt"></i> Domingo: Fechado</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                    <p><i class="fab fa-whatsapp"></i> (11) 98888-8888</p>
-                    <p><i class="far fa-envelope"></i> contato@studionailart.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Inocoop - Guarulhos, SP</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Studio Nail Art - Todos os direitos reservados | Desenvolvido com <i class="fas fa-heart"></i> para você</p>
-            </div>
-        </div>
-    </footer>
+<div class="servico">
+<h3>Esmaltação</h3>
+<p>Acabamento profissional com foco na saúde das unhas.</p>
+<span>R$ 40,00</span>
+</div>
 
-    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<div class="servico">
+<h3>Manutenção</h3>
+<p>Rebalanceamento e renovação do design.</p>
+<span>R$ 65,00</span>
+</div>
 
-    <script src="script.js"></script>
+</section>
+
+<section class="cta">
+<a href="https://wa.me/5511913340706" class="btn btn-primary">
+Agendar pelo WhatsApp
+</a>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Studio Nail Art</p>
+</footer>
+
 </body>
 </html>
