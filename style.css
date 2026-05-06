@@ -1315,3 +1315,197 @@ footer::before {
         width: 200px;
     }
 }
+/* Página de Termos e Condições */
+.termos-content {
+    padding: 80px 0;
+}
+
+.termo-section {
+    margin-bottom: 60px;
+}
+
+.termo-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--accent-light);
+    display: inline-block;
+}
+
+.termo-section h2 i {
+    color: var(--accent);
+    margin-right: 12px;
+}
+
+.termo-card {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.termo-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.termo-card h3 {
+    font-size: 1.3rem;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+}
+
+.termo-card p {
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.termo-card ul {
+    list-style: none;
+    margin-top: 12px;
+}
+
+.termo-card ul li {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+}
+
+.termo-card ul li i {
+    color: var(--accent);
+    margin-right: 10px;
+}
+
+.termo-concordancia {
+    background: linear-gradient(135deg, var(--accent-soft), var(--background));
+    border-radius: 28px;
+    padding: 48px;
+    text-align: center;
+    margin-top: 40px;
+    border: 1px solid var(--accent-light);
+}
+
+.termo-concordancia i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.termo-concordancia h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.termo-concordancia p {
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+}
+
+/* Aviso de Atendimento */
+.aviso-atendimento {
+    padding: 40px 0 0;
+}
+
+.aviso-card {
+    background: linear-gradient(135deg, var(--accent-soft), var(--background));
+    border-radius: 20px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 4px solid var(--accent);
+}
+
+.aviso-card i {
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+.aviso-content h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.aviso-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Informações de Atendimento */
+.informacoes-atendimento {
+    padding: 80px 0;
+    background: var(--surface);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.info-box {
+    background: var(--background);
+    padding: 32px;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid var(--border);
+}
+
+.info-box:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-light);
+}
+
+.info-box i {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    margin-bottom: 16px;
+    color: var(--primary);
+}
+
+.info-box p {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.info-box small {
+    display: block;
+    margin-top: 12px;
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .aviso-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .termo-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .termo-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .termo-concordancia {
+        padding: 32px 24px;
+    }
+    
+    .termo-concordancia h3 {
+        font-size: 1.2rem;
+    }
+}
