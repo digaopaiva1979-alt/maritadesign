@@ -5,19 +5,19 @@
 }
 
 :root {
-    /* Paleta de Cores para Studio de Unhas - Elegante & Sofisticado */
-    --primary: #4A3B3C;
-    --primary-dark: #2E2425;
-    --primary-light: #6B5556;
-    --accent: #D4B5B2;
-    --accent-dark: #C4A09C;
-    --accent-light: #F2E6E4;
-    --accent-soft: #F9F0EE;
-    --background: #FCF9F8;
+    /* Paleta Dark Rose - Sofisticada & Acolhedora */
+    --primary: #3D2B2F;
+    --primary-dark: #2D1F22;
+    --primary-light: #5A4045;
+    --accent: #C9A9A4;
+    --accent-dark: #B8928C;
+    --accent-light: #E5D0CC;
+    --accent-soft: #F5EDEB;
+    --background: #FDF9F8;
     --surface: #FFFFFF;
     --surface-glass: rgba(255, 255, 255, 0.96);
-    --text-primary: #2C2425;
-    --text-secondary: #7A6B6C;
+    --text-primary: #2D2426;
+    --text-secondary: #7A6B6D;
     --text-muted: #B8ACAD;
     --border: #F0E8E6;
     --border-dark: #E5D9D7;
@@ -27,7 +27,7 @@
     --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.06);
     --shadow-hover: 0 24px 56px rgba(0, 0, 0, 0.08);
-    --shadow-glow: 0 0 0 1px rgba(212, 181, 178, 0.15), 0 8px 24px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 0 1px rgba(201, 169, 164, 0.15), 0 8px 24px rgba(0, 0, 0, 0.04);
     --transition: all 0.4s cubic-bezier(0.2, 0.95, 0.4, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
@@ -53,15 +53,15 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.02em;
 }
 
-/* Header - Glassmorphism Elegante */
+/* Header - Dark Rose Glassmorphism */
 header {
-    background: var(--surface-glass);
+    background: rgba(45, 31, 34, 0.85);
     backdrop-filter: blur(12px);
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(201, 169, 164, 0.2);
 }
 
 nav {
@@ -69,6 +69,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -86,7 +87,7 @@ nav {
 .logo span {
     font-size: 1.4rem;
     font-weight: 500;
-    color: var(--primary);
+    color: var(--accent-light);
     font-family: 'Playfair Display', serif;
     letter-spacing: -0.5px;
 }
@@ -94,12 +95,13 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-secondary);
+    color: #E8DEDC;
     font-weight: 450;
     font-size: 0.95rem;
     transition: var(--transition);
@@ -127,19 +129,19 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary);
+    color: var(--accent-light);
 }
 
 .mobile-menu {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--primary);
+    color: var(--accent-light);
 }
 
-/* Hero Section - Centralizada com Toque Acolhedor */
+/* Hero Section - Dark Rose Elegante */
 .hero {
-    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--background) 60%, #FFFDFC 100%);
+    background: linear-gradient(135deg, #3D2B2F 0%, #2D1F22 50%, #3D2B2F 100%);
     padding: 120px 0;
     display: flex;
     flex-direction: column;
@@ -157,7 +159,7 @@ nav {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(212, 181, 178, 0.03) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(201, 169, 164, 0.08) 0%, transparent 70%);
     pointer-events: none;
     animation: slowRotate 40s linear infinite;
 }
@@ -178,13 +180,13 @@ nav {
     font-size: 4rem;
     margin-bottom: 24px;
     line-height: 1.15;
-    color: var(--primary);
+    color: #F5EDEB;
     font-weight: 500;
     letter-spacing: -0.02em;
 }
 
 .highlight {
-    color: var(--accent-dark);
+    color: var(--accent);
     position: relative;
     display: inline-block;
 }
@@ -196,14 +198,14 @@ nav {
     left: 0;
     width: 100%;
     height: 30%;
-    background: rgba(212, 181, 178, 0.25);
+    background: rgba(201, 169, 164, 0.25);
     z-index: -1;
     border-radius: 8px;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    color: var(--text-secondary);
+    color: #D4C8C5;
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
@@ -239,7 +241,7 @@ nav {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
 }
@@ -250,32 +252,33 @@ nav {
 }
 
 .btn-primary {
-    background: var(--primary);
-    color: white;
+    background: var(--accent);
+    color: #2D1F22;
     border: 1px solid transparent;
     box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-    background: var(--primary-light);
+    background: var(--accent-dark);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+    color: #2D1F22;
 }
 
 .btn-secondary {
     background: transparent;
     border: 1.5px solid var(--accent);
-    color: var(--accent-dark);
+    color: var(--accent-light);
 }
 
 .btn-secondary:hover {
     background: var(--accent);
-    color: white;
+    color: #2D1F22;
     border-color: var(--accent);
     transform: translateY(-3px);
 }
 
-/* Section Titles com Decoração */
+/* Section Titles */
 .section-title {
     text-align: center;
     font-size: 2.6rem;
@@ -308,7 +311,7 @@ nav {
     border-radius: 2px;
 }
 
-/* Diferenciais Cards - Com Efeito Elegante */
+/* Diferenciais Cards */
 .diferenciais {
     padding: 100px 0;
     background: var(--surface);
@@ -380,7 +383,7 @@ nav {
     line-height: 1.7;
 }
 
-/* Serviços Cards - Premium */
+/* Serviços Cards */
 .servicos-destaque {
     padding: 100px 0;
     background: var(--accent-soft);
@@ -412,7 +415,7 @@ nav {
     left: 0;
     right: 0;
     height: 0;
-    background: linear-gradient(to top, rgba(212, 181, 178, 0.08), transparent);
+    background: linear-gradient(to top, rgba(201, 169, 164, 0.08), transparent);
     transition: var(--transition);
 }
 
@@ -472,10 +475,10 @@ nav {
     text-align: center;
 }
 
-/* Footer - Sofisticado */
+/* Footer - Dark Rose */
 footer {
-    background: var(--primary);
-    color: #E8E0DE;
+    background: var(--primary-dark);
+    color: #E8DEDC;
     padding: 64px 0 32px;
     position: relative;
 }
@@ -487,7 +490,7 @@ footer::before {
     left: 10%;
     right: 10%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    background: linear-gradient(90deg, transparent, rgba(201, 169, 164, 0.2), transparent);
 }
 
 .footer-content {
@@ -501,7 +504,7 @@ footer::before {
 .footer-section h4 {
     margin-bottom: 24px;
     font-size: 1.2rem;
-    color: white;
+    color: var(--accent-light);
     letter-spacing: -0.3px;
     font-weight: 500;
 }
@@ -517,6 +520,7 @@ footer::before {
     display: flex;
     gap: 16px;
     margin-top: 24px;
+    flex-wrap: wrap;
 }
 
 .social-links a {
@@ -529,13 +533,13 @@ footer::before {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(201, 169, 164, 0.1);
 }
 
 .social-links a:hover {
     color: var(--accent);
     transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(201, 169, 164, 0.2);
 }
 
 .footer-section ul {
@@ -561,7 +565,7 @@ footer::before {
 .footer-bottom {
     text-align: center;
     padding-top: 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(201, 169, 164, 0.1);
     color: #A89895;
     font-size: 0.8rem;
 }
@@ -570,7 +574,7 @@ footer::before {
     color: var(--accent);
 }
 
-/* WhatsApp Float - Com Brilho */
+/* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
     bottom: 32px;
@@ -604,7 +608,7 @@ footer::before {
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(135deg, var(--accent-soft) 0%, var(--background) 100%);
+    background: linear-gradient(135deg, #3D2B2F 0%, #2D1F22 100%);
     padding: 80px 0 64px;
     text-align: center;
     position: relative;
@@ -612,12 +616,12 @@ footer::before {
 
 .page-header h1 {
     font-size: 3rem;
-    color: var(--primary);
+    color: #F5EDEB;
     margin-bottom: 16px;
 }
 
 .page-header p {
-    color: var(--text-secondary);
+    color: #D4C8C5;
     font-size: 1.1rem;
 }
 
@@ -757,7 +761,7 @@ footer::before {
     left: 0;
     right: 0;
     height: 0;
-    background: linear-gradient(to top, rgba(212, 181, 178, 0.06), transparent);
+    background: linear-gradient(to top, rgba(201, 169, 164, 0.06), transparent);
     transition: var(--transition);
 }
 
@@ -859,6 +863,7 @@ footer::before {
     background: var(--surface);
     margin-bottom: 6px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .servico-item:hover {
@@ -878,6 +883,11 @@ footer::before {
 .servico-detalhes p {
     color: var(--text-secondary);
     font-size: 0.85rem;
+}
+
+.servico-detalhes small {
+    color: var(--accent);
+    font-size: 0.75rem;
 }
 
 .servico-preco .preco {
@@ -1164,157 +1174,6 @@ footer::before {
     color: var(--accent);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 24px;
-    }
-    
-    .mobile-menu {
-        display: block;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: var(--surface);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: var(--transition);
-        z-index: 999;
-        gap: 32px;
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .hero {
-        padding: 80px 0;
-    }
-    
-    .hero-content h1 {
-        font-size: 2.4rem;
-    }
-    
-    .hero-content p {
-        font-size: 1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .btn {
-        width: 220px;
-    }
-    
-    .sobre-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .profile-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 36px;
-    }
-    
-    .contato-info {
-        grid-template-columns: 1fr;
-    }
-    
-    .social-media {
-        grid-column: span 1;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .servico-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 12px;
-    }
-    
-    .tabs {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .tab-btn {
-        width: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 20px;
-    }
-    
-    .hero-content h1 {
-        font-size: 1.9rem;
-    }
-    
-    .diferenciais-grid,
-    .servicos-grid,
-    .valores-grid,
-    .pacotes-grid,
-    .acessos-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .btn {
-        width: 100%;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .whatsapp-float {
-        width: 54px;
-        height: 54px;
-        font-size: 1.7rem;
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .section-title {
-        font-size: 1.7rem;
-    }
-    
-    .profile-image img {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .pacote-card {
-        padding: 36px 24px;
-    }
-    
-    .social-icons {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .social-icons a {
-        width: 200px;
-    }
-}
 /* Página de Termos e Condições */
 .termos-content {
     padding: 80px 0;
@@ -1418,6 +1277,7 @@ footer::before {
     align-items: center;
     gap: 20px;
     border-left: 4px solid var(--accent);
+    flex-wrap: wrap;
 }
 
 .aviso-card i {
@@ -1487,7 +1347,136 @@ footer::before {
     font-size: 0.8rem;
 }
 
+/* Checkbox para Termos */
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.checkbox-label input {
+    width: auto;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--accent);
+}
+
+.checkbox-label a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 0 24px;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--primary-dark);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+        z-index: 999;
+        gap: 32px;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .btn {
+        width: 220px;
+    }
+    
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 36px;
+    }
+    
+    .contato-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-media {
+        grid-column: span 1;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .servico-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tab-btn {
+        width: 220px;
+    }
+    
     .aviso-card {
         flex-direction: column;
         text-align: center;
@@ -1507,5 +1496,67 @@ footer::before {
     
     .termo-concordancia h3 {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.9rem;
+    }
+    
+    .diferenciais-grid,
+    .servicos-grid,
+    .valores-grid,
+    .pacotes-grid,
+    .acessos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        font-size: 1.7rem;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .pacote-card {
+        padding: 36px 24px;
+    }
+    
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .social-icons a {
+        width: 200px;
     }
 }
