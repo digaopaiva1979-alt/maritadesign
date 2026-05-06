@@ -864,3 +864,72 @@ footer {
         right: 20px;
     }
 }
+/* Estilos para a página de contato com localização */
+.referencia {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--primary-dark);
+}
+
+.referencia i {
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+/* Seção Como Chegar */
+.como-chegar {
+    padding: 80px 0;
+    background: var(--secondary-color);
+}
+
+.acessos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.acesso-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.acesso-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.acesso-item i {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.acesso-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.acesso-item p {
+    margin-bottom: 8px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.acesso-item strong {
+    color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .acessos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .acesso-item {
+        padding: 20px;
+    }
+}
